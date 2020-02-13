@@ -15,7 +15,7 @@
   "main": "index.js",
   "scripts": {
     "pretest": "node pretest.js",
-    "test": "mocha test/*.test.js node_modules/juggler-v3/test.js node_modules/juggler-v4/test.js",
+    "test": "mocha --timeout 20000 test/*.test.js node_modules/juggler-v3/test.js node_modules/juggler-v4/test.js",
     "lint": "eslint .",
     "posttest": "npm run lint"
   },
